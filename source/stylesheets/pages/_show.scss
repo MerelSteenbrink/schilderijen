@@ -1,7 +1,7 @@
 .photo-show {
   .image {
     img {
-      width: 100px;
+      max-width: 100%;;
     }
   }
   .info {
@@ -17,3 +17,9 @@
     }
   }
 }
+
+.actions {
+  display: flex;
+  justify-content: space-between
+}
+
