@@ -10,6 +10,10 @@
 # Auto-prefixing of CSS code with vendor prefix
 activate :autoprefixer
 
+
+data.photos.each do |photo|
+  proxy "/photos/#{photo[:id]}.html", "/photos/show.html", locals: { id: photo[:id] }
+end
 ###
 # Page options, layouts, aliases and proxies
 ###

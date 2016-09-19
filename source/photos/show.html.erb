@@ -1,0 +1,59 @@
+<!-- setting the photo for this page -->
+<% photo = data.photos[(id.to_i - 1)] %>
+
+
+<!-- link to the homepage -->
+
+<% link_to "/" do %>
+<span>
+  Back to index
+</span>
+<% end %>
+
+<!-- displaying the photo content -->
+<div class="photo-show">
+  <div class="image">
+    <%= image_tag photo[:image_url] %>
+  </div>
+  <div class="info">
+    <div class="name">
+      <h2>
+        <%= photo[:name] %>
+      </h2>
+    </div>
+    <div class="description">
+      <p>
+        <%= photo[:description] %>
+      </p>
+    </div>
+  </div>
+</div>
+<%= photo[:id] %>
+
+<% last_photo = data.photos.length %>
+<!-- set next photo -->
+<% if photo[:id].to_i == last_photo %>
+<% next_photo = 1 %>
+<% else %>
+<% next_photo = (photo[:id].to_i + 1) %>
+<% end %>
+
+<!-- set previous photo -->
+<% if photo[:id].to_i == 1 %>
+<% previous_photo = last_photo %>
+<% else %>
+<% previous_photo = (photo[:id].to_i - 1) %>
+<% end %>
+
+<div class="actions">
+  <div class="previous">
+  <% link_to "/photos/#{previous_photo}.html" do %>
+  <i class="fa fa-arrow-left"></i>
+  <% end %>
+  </div>
+  <div class="next">
+  <% link_to "/photos/#{next_photo}.html" do %>
+  <i class="fa fa-arrow-right"></i>
+  <% end %>
+  </div>
+</div>
