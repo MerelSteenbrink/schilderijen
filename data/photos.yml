@@ -1,7 +1,7 @@
 - id: 1
   name: this is 1
   description: photo description of photo 1
-  image_url: https://unsplash.it/1000/600
+  image_url: "http://res.cloudinary.com/dacmssewe/image/upload/v1464949151/obswsshu3sc6witbjdvz.jpg"
 - id: 2
   name: this is 2
   description: photo description of photo 2
