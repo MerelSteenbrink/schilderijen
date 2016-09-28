@@ -2,6 +2,9 @@
 title: Schilderijen
 ---
 
+<%= cl_image_tag("obswsshu3sc6witbjdvz.jpg",
+      width: 400, height: 300, crop: :fill) %>
+
 <div class="photos">
   <% data.photos.each do |photo| %>
   <% link_to "/photos/#{photo[:id]}.html" do %>
