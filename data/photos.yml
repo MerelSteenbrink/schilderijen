@@ -1,7 +1,8 @@
 - id: 1
-  name: this is 1
-  description: photo description of photo 1
-  image_url: "http://res.cloudinary.com/dacmssewe/image/upload/v1464949151/obswsshu3sc6witbjdvz.jpg"
+  name: Zonder titel
+  description: everything is eluminated
+  image_url: "http://res.cloudinary.com/dacmssewe/image/upload/c_scale,w_4912/v1475073919/1993_jan-feb_mpbrbq.jpg"
+  year: 1993
 - id: 2
   name: this is 2
   description: photo description of photo 2
